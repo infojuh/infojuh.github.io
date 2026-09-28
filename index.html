@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Júlio César Andrade · Líder de Tecnologia & IA</title>
+  <meta name="description" content="Portfólio de Júlio César Andrade, Líder de Tecnologia & IA. Construo produtos in-house que substituem SaaS, com LLMs e RAG em produção.">
+  <meta name="author" content="Júlio César Andrade">
+  <meta property="og:title" content="Júlio César Andrade · Líder de Tecnologia & IA">
+  <meta property="og:description" content="Construo produtos in-house que substituem SaaS. TypeScript, Node, PostgreSQL, AWS, LLMs e RAG em produção.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://infojuh.github.io/">
+  <meta name="theme-color" content="#07090a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+  <script>
+    try {
+      var th = localStorage.getItem('theme');
+      if (th === 'light' || th === 'dark') document.documentElement.dataset.theme = th;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Início" data-i18n-label="navHome">
+        <span class="logo-mark">JC</span>
+        <span class="logo-text">infojuh</span>
+      </a>
+
+      <nav aria-label="Principal" data-i18n-label="navMain">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre" data-i18n="navAbout">Sobre</a></li>
+          <li><a href="#experiencia" data-i18n="navExp">Experiência</a></li>
+          <li><a href="#plataforma" data-i18n="navPlatform">Plataforma</a></li>
+          <li><a href="#projetos" data-i18n="navProjects">Projetos</a></li>
+          <li><a href="#lideranca" data-i18n="navLead">Liderança</a></li>
+          <li><a href="#contato" data-i18n="navContact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang" role="group" aria-label="Idioma" data-i18n-label="langGroup">
+          <button type="button" data-lang="pt" aria-pressed="true" lang="pt-BR">PT</button>
+          <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button>
+        </div>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="status reveal"><span class="dot" aria-hidden="true"></span><span data-i18n="status">Campina Grande, PB · Líder de Tecnologia e VIP no BPX Group</span></p>
+          <h1 class="reveal">
+            <span class="hello" data-i18n="hello">Olá, eu sou</span>
+            Júlio César Andrade
+          </h1>
+          <p class="role reveal">
+            <span class="sr-only" data-i18n="roleStatic">Líder de Tecnologia e IA</span>
+            <span aria-hidden="true"><span class="mono accent">&gt;</span> <span id="typed">Líder de Tecnologia &amp; IA</span><span class="caret"></span></span>
+          </p>
+          <p class="lead reveal" data-i18n="lead">
+            Construo produtos in-house que substituem SaaS. Comecei no atendimento em 2022 e hoje lidero o time que
+            desenvolve as plataformas que a operação usa todos os dias, com LLMs e RAG em produção.
+          </p>
+          <div class="cta reveal">
+            <a class="btn btn-primary" href="#projetos" data-i18n="ctaProjects">Ver projetos</a>
+            <a class="btn btn-ghost" href="#contato" data-i18n="ctaContact">Entrar em contato</a>
+          </div>
+          <ul class="socials reveal" aria-label="Redes" data-i18n-label="socials">
+            <li><a href="https://github.com/infojuh" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-andrade-32a8112b3/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a></li>
+          </ul>
+        </div>
+
+        <figure class="terminal reveal">
+          <figcaption class="sr-only" data-i18n="termCaption">Resumo da stack e do foco, em formato de terminal</figcaption>
+          <div class="term-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p class="mono">~/julio</p>
+          </div>
+<pre class="term-body mono"><span class="t-dim">$</span> whoami
+<span class="t-acc">júlio césar andrade</span>
+
+<span class="t-dim">$</span> cat stack.txt
+typescript · node.js · react
+postgresql + pgvector · redis
+bullmq · aws ecs · docker
+
+<span class="t-dim">$</span> cat <span data-i18n="termFile">foco</span>.txt
+<span data-i18n="termFocus">produtos in-house no lugar de saas
+ia que atende primeiro
+liderança com mão no código</span>
+
+<span class="t-dim">$</span> <span class="caret caret-block" aria-hidden="true"></span></pre>
+        </figure>
+      </div>
+
+      <div class="container">
+        <ul class="stats reveal">
+          <li class="stat"><strong>2022 → 2026</strong><span data-i18n="stat1">de atendente de telemarketing a líder de tecnologia</span></li>
+          <li class="stat"><strong>5+</strong><span data-i18n="stat2">setores do call center atendidos pelo ecossistema interno</span></li>
+          <li class="stat"><strong>3</strong><span data-i18n="stat3">áreas lideradas: Inovação, VIP e Implantação</span></li>
+          <li>
+            <a class="stat stat-link" href="#plataforma">
+              <strong>1</strong>
+              <span data-i18n="stat4">contact center omnichannel próprio, no lugar do Zendesk</span>
+              <span class="stat-more"><span data-i18n="stat4More">Como funciona</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow mono" data-i18n="aboutEyebrow">01 · sobre</p>
+          <h2 data-i18n="aboutTitle">Do atendimento à liderança de tecnologia</h2>
+        </header>
+
+        <div class="about">
+          <div class="about-text reveal">
+            <p data-i18n="about1">
+              Comecei como atendente de telemarketing em 2022. Quatro anos depois, lidero a área de Tecnologia do
+              BPX Group, onde construímos em casa as plataformas que a operação usa todos os dias.
+            </p>
+            <p data-i18n="about2">
+              Meu trabalho é transformar problemas reais de operação em produto. Conheço o atendimento por dentro,
+              porque fui atendente, monitor, supervisor de qualidade e analista, e isso me ajuda a desenhar sistemas
+              que resolvem a dor certa.
+            </p>
+            <p data-i18n="about3">
+              Conduzo o time e continuo desenvolvendo junto. Penso a arquitetura para escala e estabilidade, com
+              processamento assíncrono em filas e containers na AWS, e trato segurança e governança desde o primeiro
+              dia: RBAC, log de auditoria e alinhamento com jurídico e compliance.
+            </p>
+          </div>
+
+          <aside class="about-cards">
+            <article class="card reveal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+              <h3 data-i18n="eduTitle">Formação</h3>
+              <p data-i18n="eduCourse">Bacharelado em Ciência da Computação, UNINTER</p>
+              <p class="muted mono" data-i18n="eduDates">2025 – 2029 · em andamento</p>
+            </article>
+            <article class="card reveal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <h3 data-i18n="teamTitle">Time</h3>
+              <p data-i18n="teamText">Lidero dois desenvolvedores na Inovação, além das áreas de VIP e Implantação.</p>
+            </article>
+            <article class="card reveal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+              <h3 data-i18n="founderTitle">Empreendedor</h3>
+              <p data-i18n="founderText">Fundador da Sync CX, de soluções de Customer Experience e IA para atendimento.</p>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section alt" id="experiencia">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow mono" data-i18n="expEyebrow">02 · experiência</p>
+          <h2 data-i18n="expTitle">Onde tenho trabalhado</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job-meta"><p class="mono" data-i18n="job1Date">07/2026 – hoje</p></div>
+            <div class="job-body">
+              <h3><span data-i18n="job1Role">Líder de Tecnologia e VIP</span> <span class="at">BPX Group</span></h3>
+              <ul data-i18n="job1List">
+                <li>Assumi a liderança com um desafio claro: fazer a tecnologia deixar de ser suporte e passar a ser motor do negócio numa operação multimarcas.</li>
+                <li>Liderei a criação de um ecossistema próprio que atende mais de cinco setores do call center, reduzindo a dependência de ferramentas de terceiros.</li>
+                <li>Desenvolvemos um contact center omnichannel (webchat, e-mail, chamados, central de ajuda e integração com voz) que substituiu o Zendesk e reduziu os custos com licenças.</li>
+                <li>Levamos IA para onde ela faz diferença: um agente de atendimento autônomo, ferramentas de apoio aos operadores e um sistema de Jogo Responsável em conformidade com a regulamentação brasileira.</li>
+                <li>No VIP, desenhei um programa de fidelidade em níveis, validado por Jogo Responsável, com visão 360° do setor.</li>
+              </ul>
+              <ul class="tags" aria-label="Tecnologias" data-i18n-label="techs">
+                <li>TypeScript</li><li>React</li><li>Node.js</li><li>PostgreSQL + pgvector</li><li>Redis</li><li>BullMQ</li><li>AWS ECS</li><li>LLMs</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-meta"><p class="mono">03/2026 – 06/2026</p></div>
+            <div class="job-body">
+              <h3><span data-i18n="job2Role">Coordenador VIP</span> <span class="at">BPX Group</span></h3>
+              <ul data-i18n="job2List">
+                <li>Coordenei o relacionamento e acompanhamento de clientes de alto valor numa operação multimarcas.</li>
+                <li>Estruturei a análise da carteira VIP com indicadores de rentabilidade, retenção e comportamento.</li>
+                <li>Liderei o time de Account Managers: metas, rotina de relacionamento e produtividade.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-meta"><p class="mono" data-i18n="job3Date">03/2026 – hoje</p></div>
+            <div class="job-body">
+              <h3><span data-i18n="job3Role">CEO e Fundador</span> <span class="at"><a class="at-link" href="https://sync-cx.top/" target="_blank" rel="noopener">Sync CX</a></span></h3>
+              <ul data-i18n="job3List">
+                <li>Estratégia de produto, operação e crescimento da empresa.</li>
+                <li>Desenvolvimento e implantação de agentes de IA para atendimento.</li>
+                <li>Consultoria em estruturação de operações: Zendesk, Intercom, fluxos, automações e dashboards.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-meta"><p class="mono">02/2025 – 05/2026</p></div>
+            <div class="job-body">
+              <h3><span data-i18n="job4Role">Analista de CX Tech</span> <span class="at">BPX Group</span></h3>
+              <ul data-i18n="job4List">
+                <li>Fiz a ponte entre a operação de atendimento e a tecnologia.</li>
+                <li>Implantei e otimizei chatbots e a IA da Zendesk (Ultimate AI).</li>
+                <li>Conduzi implantações de contact center e integrações de CRM para chat e voz.</li>
+                <li>Participei como cliente referência no Zendesk ShowCase.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-meta"><p class="mono">04/2022 – 02/2025</p></div>
+            <div class="job-body">
+              <h3><span data-i18n="job5Role">Atendimento, qualidade e operações</span> <span class="at">Join Us Contact Center</span></h3>
+              <ul data-i18n="job5List">
+                <li>Analista de operações: análise de dados, planos de ação para chat e voz e ajuste de fluxos de chatbot.</li>
+                <li>Supervisor de qualidade: reestruturei o setor e liderei a implantação do Zendesk como plataforma de atendimento.</li>
+                <li>Comecei como atendente de telemarketing e monitor: foi onde aprendi o que cliente e atendente precisam de uma ferramenta.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <div class="job-meta"><p class="mono">12/2020 – 09/2021</p></div>
+            <div class="job-body">
+              <h3><span data-i18n="job6Role">Analista de telecomunicações</span> <span class="at">AeC</span></h3>
+              <ul data-i18n="job6List">
+                <li>Atendimento a clientes da 99Food por e-mail e, depois, tratativa de tickets da operação 99Rider.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PLATAFORMA -->
+    <section class="section" id="plataforma">
+      <div class="container">
+        <div class="sync">
+          <div class="sync-intro">
+            <header class="section-head reveal">
+              <p class="eyebrow mono" data-i18n="platEyebrow">03 · plataforma</p>
+              <h2 data-i18n="platTitle">BPX Connect + Sync AI</h2>
+            </header>
+            <div class="sync-text reveal">
+              <p data-i18n="plat1">
+                Começamos usando o Twilio Flex só para rotear tasks. Hoje temos nossa própria plataforma de
+                atendimento, com chat, e-mail e chamados unificados.
+              </p>
+              <p data-i18n="plat2">
+                O BPX Connect é a estrutura: onde os atendentes trabalham, onde a operação edita os fluxos e
+                acompanha as métricas. O Sync AI é a IA que atende primeiro e, quando precisa de uma pessoa,
+                transfere para a fila humana com o contexto. O cliente não repete nada.
+              </p>
+            </div>
+            <ul class="checks reveal" data-i18n="platList">
+              <li>Editor visual de fluxos, executado por uma máquina de estados</li>
+              <li>Central de ajuda própria que alimenta o RAG</li>
+              <li>Analytics com visão 360° e nível de serviço</li>
+              <li>Log de auditoria e rollback de qualquer alteração</li>
+              <li>RBAC com permissões por módulo e teto de papel</li>
+            </ul>
+            <ul class="tags reveal" aria-label="Tecnologias" data-i18n-label="techs">
+              <li>TypeScript</li><li>React</li><li>Express</li><li>PostgreSQL</li><li>pgvector</li><li>Redis</li><li>BullMQ</li><li>AWS ECS</li>
+            </ul>
+            <p class="thanks reveal" data-i18n="platThanks">Construído com Mateus Andrade e Edmar Silva.</p>
+          </div>
+
+          <div class="pipeline reveal">
+            <h3 class="pipeline-title mono" data-i18n="pipeTitle">o caminho de um atendimento</h3>
+            <ol>
+              <li>
+                <span class="step mono" aria-hidden="true">01</span>
+                <div><h4 data-i18n="p1t">Entrada</h4>
+                <p data-i18n="p1">A mensagem chega por qualquer canal e é confirmada na hora. O processamento pesado vai para filas em BullMQ e Redis, que absorvem os picos.</p></div>
+              </li>
+              <li>
+                <span class="step mono" aria-hidden="true">02</span>
+                <div><h4 data-i18n="p2t">Jogo Responsável</h4>
+                <p data-i18n="p2">Antes da IA, regras por tema e um classificador semântico procuram sinais de risco. Se aparecem, a conversa vai para um atendente.</p></div>
+              </li>
+              <li>
+                <span class="step mono" aria-hidden="true">03</span>
+                <div><h4 data-i18n="p3t">IA atende</h4>
+                <p data-i18n="p3">O RAG busca no pgvector os trechos da central de ajuda que respondem à pergunta, e o modelo escreve a resposta.</p></div>
+              </li>
+              <li>
+                <span class="step mono" aria-hidden="true">04</span>
+                <div><h4 data-i18n="p4t">Fidelidade</h4>
+                <p data-i18n="p4">A resposta é conferida contra o conteúdo recuperado, para a IA não inventar informação.</p></div>
+              </li>
+              <li>
+                <span class="step mono" aria-hidden="true">05</span>
+                <div><h4>Fallback</h4>
+                <p data-i18n="p5">Se o modelo principal falha, um modelo reserva assume e o atendimento continua no ar.</p></div>
+              </li>
+              <li>
+                <span class="step mono" aria-hidden="true">06</span>
+                <div><h4 data-i18n="p6t">Humano com contexto</h4>
+                <p data-i18n="p6">Quando precisa de uma pessoa, a conversa entra na fila humana com todo o histórico.</p></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section alt" id="projetos">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow mono" data-i18n="projEyebrow">04 · projetos</p>
+          <h2 data-i18n="projTitle">O que construímos</h2>
+          <p class="section-sub" data-i18n="projSub">Sistemas internos em produção, feitos por mim e pelo meu time. O código e a documentação são privados.</p>
+        </header>
+
+        <ul class="projects">
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kPlatform">plataforma</span><span class="badge mono" data-i18n="prod">em produção</span></div>
+            <h3>BPX Connect</h3>
+            <p data-i18n="pr1">Contact center omnichannel próprio: webchat, e-mail, chamados e integração com voz, com fluxos, filas, métricas e governança.</p>
+            <ul class="tags sm"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Redis</li><li>AWS</li></ul>
+          </li>
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kAI">ia</span><span class="badge mono" data-i18n="prod">em produção</span></div>
+            <h3>Sync AI</h3>
+            <p data-i18n="pr2">Agente de IA que atende primeiro, com RAG em pgvector, checagem de fidelidade, fallback de modelo e transbordo humano com contexto.</p>
+            <ul class="tags sm"><li>LLMs</li><li>RAG</li><li>pgvector</li><li>BullMQ</li></ul>
+          </li>
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kInfra">orquestração</span><span class="badge mono" data-i18n="dev">em desenvolvimento</span></div>
+            <h3>Sync Router</h3>
+            <p data-i18n="pr3">Orquestrador de conversas proprietário para substituir o Twilio Flex no webchat, com eventos em Redis Streams e regras em JSONLogic.</p>
+            <ul class="tags sm"><li>Fastify</li><li>Kysely</li><li>Postgres 16</li><li>Redis Streams</li><li>Vitest</li></ul>
+          </li>
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kCompliance">compliance</span><span class="badge mono" data-i18n="prod">em produção</span></div>
+            <h3>BPX Safe</h3>
+            <p data-i18n="pr4">Gestão de casos de Jogo Responsável multimarcas, com bloqueios, acompanhamentos, escalonamento ao jurídico e trilha de auditoria completa.</p>
+            <ul class="tags sm"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li data-i18n="tAudit">Auditoria</li></ul>
+          </li>
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kPeople">pessoas</span><span class="badge mono" data-i18n="prod">em produção</span></div>
+            <h3>VIBE BPX</h3>
+            <p data-i18n="pr5">Rede social interna com feed, reconhecimento entre colegas e uma moeda interna ligada aos indicadores de CX, com ledger imutável.</p>
+            <ul class="tags sm"><li>React</li><li>Node.js</li><li data-i18n="tGamif">Gamificação</li></ul>
+          </li>
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kKnowledge">conhecimento</span><span class="badge mono" data-i18n="prod">em produção</span></div>
+            <h3 data-i18n="pr6t">Central de ajuda multimarca</h3>
+            <p data-i18n="pr6">Base de conhecimento própria no lugar do Zendesk Guide, com busca, temas por marca e painel de edição. Também alimenta o RAG da IA.</p>
+            <ul class="tags sm"><li>React + Vite</li><li>Node.js</li><li>PostgreSQL</li></ul>
+          </li>
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kSecurity">segurança</span><span class="badge mono" data-i18n="prod">em produção</span></div>
+            <h3 data-i18n="pr7t">Plataforma Sync</h3>
+            <p data-i18n="pr7">Ecossistema que unifica as ferramentas internas num monorepo, com SSO central (Google OAuth), JWT assinado e RBAC por papel, marca e módulo.</p>
+            <ul class="tags sm"><li>pnpm workspaces</li><li>SSO</li><li>JWT RS256</li><li>RBAC</li></ul>
+          </li>
+          <li class="project reveal">
+            <div class="project-top"><span class="project-kind mono" data-i18n="kProduct">produto</span><span class="badge mono" data-i18n="design">desenho de produto</span></div>
+            <h3 data-i18n="pr8t">Programa VIP em níveis</h3>
+            <p data-i18n="pr8">Programa de fidelidade em quatro níveis, com benefícios progressivos e gerentes de conta, validado por Jogo Responsável e alinhado à Lei 14.790/2023.</p>
+            <ul class="tags sm"><li>CRM</li><li data-i18n="tRegulation">Regulação</li><li>Analytics</li></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LIDERANÇA -->
+    <section class="section" id="lideranca">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow mono" data-i18n="leadEyebrow">05 · liderança</p>
+          <h2 data-i18n="leadTitle">Como eu trabalho</h2>
+        </header>
+
+        <div class="principles">
+          <article class="principle reveal">
+            <span class="p-num mono">01</span>
+            <h3 data-i18n="l1t">Problema real antes de tecnologia</h3>
+            <p data-i18n="l1">Conheço a operação por dentro. Cada sistema nasce de uma dor que eu já vi de perto, não de uma ferramenta procurando uso.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="p-num mono">02</span>
+            <h3 data-i18n="l2t">In-house quando faz sentido</h3>
+            <p data-i18n="l2">Trocamos SaaS caros e engessados por sistemas feitos em casa, sob medida para a operação e sem custo de licença por atendente.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="p-num mono">03</span>
+            <h3 data-i18n="l3t">Escala e estabilidade</h3>
+            <p data-i18n="l3">Atendimento não pode parar. Filas assíncronas, containers no AWS ECS e fallback de modelo mantêm tudo no ar nos picos.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="p-num mono">04</span>
+            <h3 data-i18n="l4t">Segurança desde o primeiro dia</h3>
+            <p data-i18n="l4">RBAC, log de auditoria, rollback e alinhamento com jurídico e compliance fazem parte do escopo, não do pós-lançamento.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="p-num mono">05</span>
+            <h3 data-i18n="l5t">IA com os pés no chão</h3>
+            <p data-i18n="l5">IA onde ela resolve: atendimento, apoio ao operador e triagem de risco. Sempre com checagem de resposta e um humano na saída.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="p-num mono">06</span>
+            <h3 data-i18n="l6t">Liderança próxima</h3>
+            <p data-i18n="l6">Conduzo o time e continuo desenvolvendo junto, usando agentes de IA no fluxo de engenharia, do desenho ao code review.</p>
+          </article>
+        </div>
+
+        <div class="skills">
+          <article class="skill reveal">
+            <h3 data-i18n="sk1">IA e LLMs</h3>
+            <ul class="tags"><li>OpenAI</li><li>Claude</li><li>RAG</li><li>Embeddings</li><li>pgvector</li><li data-i18n="skAgents">Agentes de IA</li><li>Prompt engineering</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3 data-i18n="sk2">Back-end e dados</h3>
+            <ul class="tags"><li>Node.js</li><li>TypeScript</li><li>Express</li><li>Fastify</li><li>PostgreSQL</li><li>Redis</li><li>BullMQ</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3>Front-end</h3>
+            <ul class="tags"><li>React</li><li>Vite</li><li>Tailwind CSS</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3 data-i18n="sk4">Infra e segurança</h3>
+            <ul class="tags"><li>AWS ECS</li><li>Docker</li><li>Dokploy</li><li>SSO</li><li>RBAC</li><li>CI/CD</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3 data-i18n="sk5">Atendimento e CX</h3>
+            <ul class="tags"><li>Twilio Flex</li><li>Zendesk</li><li>Intercom</li><li>SendGrid</li><li>WFM</li><li data-i18n="skQA">Qualidade</li></ul>
+          </article>
+          <article class="skill reveal">
+            <h3 data-i18n="sk6">Gestão</h3>
+            <ul class="tags"><li data-i18n="skTeam">Liderança de times</li><li>PRDs</li><li>RACI</li><li data-i18n="skArch">Arquitetura de software</li><li>Compliance</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section alt" id="contato">
+      <div class="container">
+        <div class="contact reveal">
+          <p class="eyebrow mono" data-i18n="contactEyebrow">06 · contato</p>
+          <h2 data-i18n="contactTitle">Vamos conversar</h2>
+          <p class="section-sub" data-i18n="contactSub">Aberto a conversas sobre liderança de engenharia, produtos com IA e plataformas de atendimento.</p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-andrade-32a8112b3/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span data-i18n="ctaLinkedin">Falar no LinkedIn</span>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="https://github.com/infojuh" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              GitHub
+            </a>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value"><a href="https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-andrade-32a8112b3/" target="_blank" rel="noopener">linkedin.com/in/júlio-césar-andrade</a></span>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value"><a href="https://github.com/infojuh" target="_blank" rel="noopener">github.com/infojuh</a></span>
+            </li>
+            <li>
+              <span class="contact-label" data-i18n="location">Local</span>
+              <span class="contact-value" data-i18n="locationValue">Campina Grande, Paraíba, Brasil</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Júlio César Andrade</p>
+      <p class="mono muted" data-i18n="footerMade">HTML, CSS e JavaScript puro · hospedado no GitHub Pages</p>
+      <a href="#home" class="link-arrow"><span data-i18n="backTop">Voltar ao topo</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="i18n.js?v=1"></script>
+  <script src="script.js?v=1"></script>
+</body>
+</html>
